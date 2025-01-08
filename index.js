@@ -17,3 +17,7 @@ module.exports.Server = server;
 server.listen(port, async (req, res) => {
       console.log(`Listening on ${port}`);
   });
+
+    app.get("/", (req, res) => {
+      res.status(200).json("Successfully working cloud backend service");
+    });
